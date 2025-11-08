@@ -1,0 +1,37 @@
+{
+  "navigation": {
+    "home": "Home",
+    "news": "News",
+    "about-agency": "About Agency",
+    "licence": "Licence",
+    "companies": "Agencies",
+    "contact-us": "Contact Us"
+  },
+  "hero": {
+    "title": "State Agency for Management of Road Construction",
+    "description": "A state institution specialized in road construction and transport infrastructure of Turkmenistan"
+  },
+  "information": {
+    "read-more": "Read more"
+  },
+  "contact": {
+    "label": "Contact us",
+    "phone": "Phone number:",
+    "email": "E-mail:",
+    "mail": "E-mail",
+    "subject": "Subject",
+    "adress": "Address",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending",
+    "sent": "Your message sent successfully!",
+    "failed": "Something went wrong. Try again!"
+  },
+  "empty": {
+    "agency": "Agency couldn’t be found.",
+    "news": "News couldn’t be found."
+  },
+  "licence": {
+    "download": "Download"
+  }
+}

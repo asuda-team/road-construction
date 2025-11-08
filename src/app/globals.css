@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {  
+  --darkBlue: #112D4E;
+  --blueGray: #3F72AF;
+  --lightGray: #9DB2BF;
+  --offWhite: #DDE6ED;
+}
+
+@theme inline {
+  --color-darkBlue: var(--darkBlue);
+  --color-blueGray: var(--blueGray);
+  --color-lightGray: var(--lightGray);
+  --color-offWhite: var(--offWhite);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+}

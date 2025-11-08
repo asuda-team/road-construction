@@ -1,0 +1,37 @@
+{
+  "navigation": {
+    "home": "Baş sahypa",
+    "news": "Habarlar",
+    "about-agency": "Agentlik barada",
+    "licence": "Ygtyýarlandyryş",
+    "companies": "Edaralar",
+    "contact-us": "Habarlaşmak"
+  },
+  "hero": {
+    "title": "Awtomobil ýollarynyň gurluşygyny dolandyrmak baradaky döwlet agentligi",
+    "description": "Türkmenistanyň ýol gurluşygy we ulag infrastrukturasy boýunça ýöriteleşdirilen döwlet edarasy"
+  },
+  "information": {
+    "read-more": "Doly okamak"
+  },
+  "contact": {
+    "label": "Habarlaşmak üçin",
+    "phone": "Telefon belgimiz:",
+    "email": "E-mail salgymyz:",
+    "mail": "E-mail salgyňyz",
+    "subject": "Mowzuk",
+    "message": "Hatyňyz",
+    "adress": "Salgymyz:",
+    "send": "Ugratmak",
+    "sending": "Ugradylýar",
+    "sent": "Hatyňyz üstünlikli ugradyldy!",
+    "failed": "Näsazlyk ýüze çykdy. Täzeden synanşyň!"
+  },
+  "empty": {
+    "agency": "Agentlik tapylmady.",
+    "news": "Täzelik tapylmady."
+  },
+  "licence": {
+    "download": "Nusga ýüklemek"
+  }
+}
