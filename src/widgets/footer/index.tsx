@@ -6,17 +6,22 @@ import { MapPinIcon, PhoneIcon, EnvelopeSimpleIcon } from '@phosphor-icons/react
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const Footer = () => {
   const t = useTranslations();
+  const pathname = usePathname();
+  const isHome = pathname === '/';
+
+
 
   return (
     <footer
-      className="relative text-white pt-16 pb-8 z-[10]"
+      className={`relative text-white pt-16 pb-8 z-[10] ${isHome ? '' : 'bg-darkBlue'}`}
     >
-      <div className='absolute inset-0 backdrop-blur-xl -z-10' />
+      {isHome ? <div className='absolute inset-0 backdrop-blur-xl -z-10' /> : null}
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="footer-section">
