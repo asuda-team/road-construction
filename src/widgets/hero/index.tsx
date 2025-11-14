@@ -81,7 +81,7 @@ export const Hero = () => {
           className="text-center text-white mb-6"
         >
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4 leading-tight tracking-tight max-w-5xl mx-auto">{t('hero.title')}</h1>
-          <p className="text-base md:text-xl text-[#DDE6ED]/80 max-w-2xl mx-auto font-light">{t('hero.description')}</p>
+          {/* <p className="text-base md:text-xl text-[#DDE6ED]/80 max-w-2xl mx-auto font-light">{t('hero.description')}</p> */}
         </div>
         {/* <div className='relative'>
           <div className='absolute -top-6 left-0 right-0 z-10'>
