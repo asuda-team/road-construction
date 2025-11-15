@@ -27,6 +27,9 @@
     "sent": "Your message sent successfully!",
     "failed": "Something went wrong. Try again!"
   },
+  "info": {
+    "address": "95th house, 2011 (D. Azady) Street, Köpetdag District, Ashgabat"
+  },
   "empty": {
     "agency": "Agency couldn’t be found.",
     "news": "News couldn’t be found."

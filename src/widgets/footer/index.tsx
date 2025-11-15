@@ -56,15 +56,15 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-neutral-300">
                 <MapPinIcon size={20} />
-                <span>744000, Ashgabat, Turkmenistan</span>
+                <span>{t('info.address')}</span>
               </li>
               <li className="flex items-center gap-3 text-neutral-300">
                 <PhoneIcon size={20} />
-                <span>+993 (12) 123456</span>
+                <span>924700</span>
               </li>
               <li className="flex items-center gap-3 text-neutral-300">
                 <EnvelopeSimpleIcon size={20} />
-                <span>info@yoltaslama.gov.tm</span>
+                <span>awtoroadagency@sanly.tm</span>
               </li>
             </ul>
           </div>

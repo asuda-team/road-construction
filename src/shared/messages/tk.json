@@ -3,7 +3,7 @@
     "home": "Baş sahypa",
     "news": "Habarlar",
     "about-agency": "Agentlik barada",
-    "licence": "Ygtyýarlandyryş",
+    "licence": "Ygtyýarlylandyryş",
     "companies": "Edaralar",
     "contact-us": "Habarlaşmak"
   },
@@ -26,6 +26,9 @@
     "sending": "Ugradylýar",
     "sent": "Hatyňyz üstünlikli ugradyldy!",
     "failed": "Näsazlyk ýüze çykdy. Täzeden synanşyň!"
+  },
+  "info": {
+    "address": "Aşgabat şäheriniň Köpetdag etraby, 2011 (D. Azady) köçesiniň, 95-nji jaýy"
   },
   "empty": {
     "agency": "Agentlik tapylmady.",
