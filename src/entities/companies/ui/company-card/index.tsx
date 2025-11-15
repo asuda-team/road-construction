@@ -13,13 +13,15 @@ const CompanyCard = ({ data }: Props) => {
   return (
     <Link href={`/companies/${id}`} className="relative">
       <div className="relative w-full aspect-video overflow-hidden rounded-xl bg-neutral-100">
-        <Image
-          src={imagePath(files[0].path)}
-          alt={name as string}
-          className="object-contain"
-          sizes={'112px'}
-          fill
-        />
+        {files?.[0]?.path ? (
+          <Image
+            src={imagePath(files[0].path)}
+            alt={name as string}
+            className="object-contain"
+            sizes={'112px'}
+            fill
+          />
+        ) : null}
       </div>
       <div className="px-2 py-4">
         <h2 className="text-lg font-semibold text-darkBlue line-clamp-2">{name as string}</h2>

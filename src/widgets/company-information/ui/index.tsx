@@ -10,7 +10,7 @@ const CompanyInformation = () => {
   const t = useTranslations();
   const { details } = useInformation();
 
-  return details ? (
+  return details?.description && details?.files?.[0]?.path ? (
     <section id={'company-information'} className="py-20">
       <div className="container mx-auto px-4 grid lg:grid-cols-4 gap-10 items-center">
         <div className="space-y-10 col-span-2">
@@ -31,12 +31,12 @@ const CompanyInformation = () => {
           </Link>
         </div>
         <div className="col-span-2 flex justify-center w-full">
-          {details?.files?.[1] ? (
+          {details?.files?.[1]?.path ? (
             <video
               controls
               className="rounded-xl w-full max-h-80 shadow-xl border border-indigo-200 bg-black/80"
             >
-              <source src={imagePath(details.files[1].path)} type="video/mp4" />
+              <source src={imagePath(details?.files[1]?.path)} type="video/mp4" />
               <track kind="captions" />
             </video>
           ) : null}

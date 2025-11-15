@@ -42,15 +42,17 @@ const CompanyDetailsPage = () => {
         <h2 className="text-xl text-center sm:text-2xl md:text-3xl lg:text-4xl text-wrap font-bold text-darkBlue">{details.name as string}</h2>
       </div>
       <div className="space-y-10">
-        <div className="relative w-full h-full aspect-video rounded-xl overflow-hidden bg-neutral-100">
-          <Image
-            src={imagePath(details.files[0].path)}
-            sizes={'768px'}
-            fill
-            alt={details.name as string}
-            className="object-contain"
-          />
-        </div>
+        {details.files?.[0]?.path && (
+          <div className="relative w-full h-full aspect-video rounded-xl overflow-hidden bg-neutral-100">
+            <Image
+              src={imagePath(details.files[0].path)}
+              sizes={'768px'}
+              fill
+              alt={details.name as string}
+              className="object-contain"
+            />
+          </div>
+        )}
         <RichTextDisplay
           content={details.description as string}
         />
