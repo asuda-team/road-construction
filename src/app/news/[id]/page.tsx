@@ -1,6 +1,7 @@
 'use client'
 
 import { useNewsDetails } from "@/entities/news/hooks";
+import { RichTextDisplay } from "@/shared/ui/RichTextDisplay";
 import { imagePath } from "@/shared/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -46,7 +47,9 @@ const NewsDetailsPage = () => {
           <h2 className="py-3 sm:pr-5 md:py-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-wrap font-bold text-darkBlue">{details.name as string}</h2>
         </div>
         <div>
-          <p className="text-lg text-neutral-600 whitespace-pre-wrap">{details.description as string}</p>
+          <RichTextDisplay
+            content={details.description as string}
+          />
         </div>
       </div>
     </div>

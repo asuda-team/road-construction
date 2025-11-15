@@ -1,6 +1,7 @@
 'use client'
 
 import { useCompanyDetails } from "@/entities/companies/hooks";
+import { RichTextDisplay } from "@/shared/ui/RichTextDisplay";
 import { imagePath } from "@/shared/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image"
@@ -43,7 +44,9 @@ const CompanyDetailsPage = () => {
             className="object-contain"
           />
         </div>
-        <p className="text-base font-medium text-neutral-600 whitespace-pre-wrap">{details.description as string}</p>
+        <RichTextDisplay
+          content={details.description as string}
+        />
       </div>
     </div>
   )

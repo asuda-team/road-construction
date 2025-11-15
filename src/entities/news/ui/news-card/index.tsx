@@ -2,6 +2,7 @@ import Image from "next/image";
 import { INews } from "../../model";
 import { imagePath } from "@/shared/utils";
 import Link from "next/link";
+import { RichTextDisplay } from "@/shared/ui/RichTextDisplay";
 
 interface Props {
   data: INews
@@ -25,7 +26,10 @@ const NewsCard = ({ data }: Props) => {
         <div className="py-4 space-y-3">
           <h2 className="text-lg font-semibold text-darkBlue line-clamp-2">{name as string}</h2>
           <div className="w-full h-[1px] bg-neutral-200" />
-          <p className="text-sm font-medium text-neutral-500 line-clamp-3">{(description as string)}</p>
+          <RichTextDisplay 
+            content={description as string}
+            className="text-sm text-neutral-500 line-clamp-3"
+          />
         </div>
       </div>
     </Link>

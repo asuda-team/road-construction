@@ -1,6 +1,7 @@
 'use client';
 
 import { useInformation } from '@/entities/information/hooks';
+import { RichTextDisplay } from '@/shared/ui/RichTextDisplay';
 import { imagePath } from '@/shared/utils';
 import Image from 'next/image';
 import { Slab } from 'react-loading-indicators';
@@ -31,7 +32,9 @@ export default function AboutPage() {
             className="object-contain"
           />
         </div>
-        <p className="text-xl font-medium text-neutral-600">{details.description as string}</p>
+        <RichTextDisplay 
+          content={details.description as string}
+        />
         <div className="relative w-full h-full aspect-video rounded-xl overflow-hidden bg-neutral-100">
           {details?.files?.[1] ? (
             <video
