@@ -2,6 +2,7 @@
 
 import { useCompanyDetails } from "@/entities/companies/hooks";
 import { RichTextDisplay } from "@/shared/ui/RichTextDisplay";
+import { Breadcrumb } from "@/shared/ui";
 import { imagePath } from "@/shared/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image"
@@ -27,10 +28,16 @@ const CompanyDetailsPage = () => {
         <h2 className="text-xl font-semibold text-darkBlue">{t('empty.agency')}</h2>
       </div>
     )
-  }
+  };
 
   return (
     <div className="px-6 py-32 md:py-36 container mx-auto max-w-5xl space-y-10 md:space-y-10">
+      <Breadcrumb
+        items={[
+          { label: t('navigation.companies'), href: '/companies' },
+          { label: details.name as string }
+        ]}
+      />
       <div>
         <h2 className="text-xl text-center sm:text-2xl md:text-3xl lg:text-4xl text-wrap font-bold text-darkBlue">{details.name as string}</h2>
       </div>

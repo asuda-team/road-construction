@@ -2,6 +2,7 @@
 
 import { useNewsDetails } from "@/entities/news/hooks";
 import { RichTextDisplay } from "@/shared/ui/RichTextDisplay";
+import { Breadcrumb } from "@/shared/ui";
 import { imagePath } from "@/shared/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -31,7 +32,12 @@ const NewsDetailsPage = () => {
 
   return (
     <div className="px-6 py-32 md:py-36 container mx-auto max-w-5xl space-y-10 md:space-y-20">
-
+      <Breadcrumb
+        items={[
+          { label: t('navigation.news'), href: '/news' },
+          { label: details.name as string }
+        ]}
+      />
       <div className="max-w-5xl w-full mx-auto space-y-10">
         <div className="relative w-full h-full aspect-video rounded-xl overflow-hidden bg-neutral-100">
           <Image

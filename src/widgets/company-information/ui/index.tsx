@@ -1,6 +1,7 @@
 'use client'
 
 import { useInformation } from "@/entities/information/hooks";
+import { RichTextDisplay } from "@/shared/ui/RichTextDisplay";
 import { imagePath } from "@/shared/utils";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -17,9 +18,10 @@ const CompanyInformation = () => {
             {t('navigation.about-agency')}
           </h2>
           <div>
-            <p className="text-lg md:text-xl font-medium text-neutral-700 leading-relaxed mb-6">
-              {(details?.description as string)?.slice(0, 300)}...
-            </p>
+            <RichTextDisplay
+              content={(details?.description as string).slice(0, 300)}
+              className="text-lg md:text-xl font-medium text-neutral-700 leading-relaxed mb-6"
+            />
           </div>
           <Link
             href={'/about'}
