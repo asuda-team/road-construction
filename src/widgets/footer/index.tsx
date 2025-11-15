@@ -54,17 +54,21 @@ export const Footer = () => {
 
           <div className="footer-section">
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-neutral-300">
-                <MapPinIcon size={20} />
-                <span>{t('info.address')}</span>
+              <li className="flex items-center md:items-start gap-3 text-neutral-300">
+                <div className='flex-shrink-0'>
+                  <MapPinIcon size={20} />
+                </div>
+                <span className=''>{t('info.address')}</span>
               </li>
               <li className="flex items-center gap-3 text-neutral-300">
                 <PhoneIcon size={20} />
-                <span>924700</span>
+                <a href={'tel:+993924700'}>924700</a>
               </li>
               <li className="flex items-center gap-3 text-neutral-300">
-                <EnvelopeSimpleIcon size={20} />
-                <span>awtoroadagency@sanly.tm</span>
+                <div className='flex-shrink-0'>
+                  <EnvelopeSimpleIcon size={20} />
+                </div>
+                <a href={`mailto:awtoroadagency@sanly.tm`}>awtoroadagency@sanly.tm</a>
               </li>
             </ul>
           </div>
