@@ -42,8 +42,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-darkBlue mb-1">{t('contact.phone')}</h3>
-                  <p className="text-blueGray/70"><a href={'tel:+99312123456'}>+993 (12) 123456</a></p>
-                  <p className="text-blueGray/70"><a href={'tel:+99312234567'}>+993 (12) 234567</a></p>
+                  <p className="text-blueGray/70"><a href={'tel:924700'}>924700</a></p>
                 </div>
               </div>
 
@@ -55,7 +54,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-darkBlue mb-1">{t('contact.email')}</h3>
-                  <p className="text-blueGray/70"><a href={'mailto:info@yoltaslama.gov.tm'}>info@yoltaslama.gov.tm</a></p>
+                  <p className="text-blueGray/70"><a href={'mailto:awtoroadagency@sanly.tm'}>awtoroadagency@sanly.tm</a></p>
                 </div>
               </div>
 
@@ -68,7 +67,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-darkBlue mb-1">{t('contact.adress')}</h3>
-                  <p className="text-blueGray/70">Aşgabat ş., Arçabil şaýoly, 156-njy jaý</p>
+                  <p className="max-w-sm text-blueGray/70">{t('info.address')}</p>
                 </div>
               </div>
             </div>

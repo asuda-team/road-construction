@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "www.pexels.com",
+        hostname: "awtoroadagency.gov.tm",
       },
     ],
   },

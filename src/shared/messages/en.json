@@ -11,6 +11,9 @@
     "title": "State Agency for Management of Road Construction",
     "description": "A state institution specialized in road construction and transport infrastructure of Turkmenistan"
   },
+  "footer": {
+    "copyright": "All rights reserved."
+  },
   "information": {
     "read-more": "Read more"
   },

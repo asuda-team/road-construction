@@ -75,7 +75,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-neutral-500 pt-8 text-center text-neutral-400">
-          <p>&copy; {new Date().getFullYear()} Yoltaslama. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
